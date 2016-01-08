@@ -29,7 +29,6 @@
 			<li><a href="#cart" data-toggle="tab">Add to Cart</a></li>
 			<li><a href="#donate" data-toggle="tab">Donate</a></li>
 			<li><a href="#subscribe" data-toggle="tab">Subscribe</a></li>
-			<li><a href="#qr" data-toggle="tab">QR Codes</a></li>
 		</ul>
 
 		<div class="tab-content">
@@ -398,100 +397,6 @@
 					    data-a3="1.00"
 					    data-p3="1"
 					    data-t3="M"
-					    async
-					></script>
-				</div>
-			</div>
-
-
-			<div id="qr" class="tab-pane example">
-				<p>QR codes are ideal for allowing quick mobile payments <a href="#qrModal" class="edit" role="button" data-toggle="modal" data-keyboard="true"><span class="icon icon-edit"></span> Customize &amp; Preview</a></p>
-
-<pre><code>&lt;script src="paypal-button.min.js?merchant=YOUR_MERCHANT_ID"
-    data-button="qr"
-    data-name="Product via QR code"
-    data-amount="1.00"
-    data-size="250"
-    async
-&gt;&lt;/script&gt;</code></pre>
-
-
-				<div id="qrModal" class="editable modal hide fade" role="dialog" aria-hidden="true">
-					<form action="#" class="modal-body form-horizontal">
-						<input type="hidden" name="button" value="qr" />
-						<div class="control-group">
-							<label class="control-label" for="qrMerchant">Merchant</label>
-							<div class="controls">
-								<input type="text" id="qrMerchant" name="business" required="required" value="" autocomplete="off" />
-								<span class="help-inline">Required</span>
-								<span class="help-inline">Email address or merchant ID</span>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="qrName">Name</label>
-							<div class="controls">
-								<input type="text" id="qrName" name="name" value="Product via QR code" autocomplete="off" />
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="qrQuantity">Quantity</label>
-							<div class="controls">
-								<input type="text" id="qrQuantity" name="quantity" value="" placeholder="1" autocomplete="off" />
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="qrAmount">Amount</label>
-							<div class="controls">
-								<input type="text" id="qrAmount" name="amount" placeholder="5.00" value="" autocomplete="off" />
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="qrCurrency">Currency</label>
-							<div class="controls">
-								<input type="text" id="qrCurrency" name="currency" placeholder="USD" value="" autocomplete="off" maxlength="3" />
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="qrShipping">Shipping</label>
-							<div class="controls">
-								<input type="text" id="qrShipping" name="shipping" placeholder="0.75" value="" autocomplete="off" />
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="qrTax">Tax</label>
-							<div class="controls">
-								<input type="text" id="qrTax" name="tax" placeholder="3.50" value="" autocomplete="off" />
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="qrCallback">Callback URL</label>
-							<div class="controls">
-								<input type="text" id="qrCallback" name="callback" placeholder="http://mysite.com/callback" value="" autocomplete="off" />
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="qrEnvironment">Environment</label>
-							<div class="controls">
-								<label class="checkbox">
-								  <input type="checkbox" id="qrEnvironment" name="env" value="sandbox">
-								  Sandbox
-								</label>
-							</div>
-						</div>
-					</form>
-
-					<div class="modal-footer">
-						<button class="btn" data-dismiss="modal">Close</button>
-    					<button class="btn btn-primary" data-modal-save="true">Preview</button>
-  					</div>
-				</div>
-
-				<div class="tryit">
-					<script src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant="
-					    data-button="qr"
-					    data-name="Product via QR code"
-					    data-amount="1.00"
-					    data-size="250"
 					    async
 					></script>
 				</div>
