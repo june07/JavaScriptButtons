@@ -7,12 +7,6 @@ module.exports = {
 
 	PAYPAL_URL: 'https://{host}/cgi-bin/webscr',
 
-	QR_URL: 'https://{host}/webapps/ppint/qrcode?data={url}&pattern={pattern}&height={size}',
-
-	QR_PATTERN: 13,
-
-	QR_SIZE: 250,
-
 	PRETTY_PARAMS: {
 		name: 'item_name',
 		number: 'item_number',

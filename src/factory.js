@@ -6,7 +6,6 @@ var DataStore = require('./util/datastore'),
     button = require('./button'),
     css = require('browserlib').css,
     form = require('./form'),
-    QR = require('./qr'),
     hasCss = false;
 
 
@@ -66,9 +65,7 @@ module.exports = function factory(business, raw, config) {
 
 
     // Build the UI components
-    if (type === 'qr') {
-        html = QR(data, config);
-    } else if (type === 'button') {
+    if (type === 'button') {
         html = button(label, data, config);
     } else {
         html = form(label, data, config);

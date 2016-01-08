@@ -52,7 +52,7 @@ describe('Test page button counter', function () {
 	});
 
 	it('Should have seven buy now buttons', function () {
-		buttons.buynow.should.equal(15);
+		buttons.buynow.should.equal(14);
 	});
 
 	it('Should have two cart buttons', function () {
@@ -100,10 +100,6 @@ describe('Form factors', function () {
 	it('Should produce a single button', function () {
 		document.querySelectorAll('#button form').length.should.equal(0);
 		document.querySelectorAll('#button button').length.should.equal(1);
-	});
-
-	it('Should produce a valid QR code', function () {
-		document.querySelector('#qr img').src.should.include('//www.paypal.com');
 	});
 });
 

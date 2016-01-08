@@ -52,18 +52,6 @@ Add To Cart buttons let users add multiple items to their PayPal cart.
 ></script>
 ```
 
-### QR Codes
-QR codes can be easily scanned with a smart phone to check out.
-
-```html
-<script async src="paypal-button.min.js?merchant=YOUR_MERCHANT_ID"
-    data-button="buynow"
-    data-type="qr"
-    data-name="Product via QR code"
-    data-amount="1.00"
-></script>
-```
-
 ### Donations
 Donation buttons let you accept donations from your users.
 
@@ -102,12 +90,12 @@ All of PayPal's [HTML button variables](https://developer.paypal.com/webapps/dev
 * `data-quantity` Quantity of items to purchase.
 * `data-shipping` The cost of shipping this item.
 * `data-tax` Transaction-based tax override variable.
-* `data-size` For button images: `small` and `large` work. For QR codes enter the pixel length of the longest side.
+* `data-size` For button images: `small` and `large` work.
 * `data-style` The style of the button. Can be set to `primary` (default) and `secondary`.
 * `data-locale` The desired locale of the PayPal site.
 * `data-callback` The IPN notify URL to be called on completion of the transaction.
 * `data-host` The PayPal host to checkout in, e.g. `www.sandbox.paypal.com` (defaults to 'www.paypal.com').
-* `data-type` The type of button to render. `button` for a plain button (default), `form` to create a button with a PayPal Payments Standard HTML form, or `qr` to create a PayPal Payments Standard compatible QR code.
+* `data-type` The type of button to render. `button` for a plain button (default) or `form` to create a button with a PayPal Payments Standard HTML form.
 
 
 ### Editable inputs
