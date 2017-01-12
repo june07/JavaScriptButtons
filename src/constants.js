@@ -34,6 +34,8 @@ module.exports = {
 
 	DEFAULT_ENV: 'www',
 
+	DEFAULT_TARGET: '_top',
+
 	TEMPLATES: '$TEMPLATES$',
 
 	STRINGS: '$STRINGS$',

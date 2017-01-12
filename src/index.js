@@ -33,7 +33,7 @@ app.create = function (business, data, config, parent) {
 
 app.process = function (el) {
     var nodes = el.getElementsByTagName('script'),
-        node, data, business, i, len;
+        node, data, business, i, len, target;
 
     for (i = 0, len = nodes.length; i < len; i++) {
         node = nodes[i];
@@ -47,6 +47,11 @@ app.process = function (el) {
 
         // If there's a merchant ID attached then it's a button of interest
         if ((business = node.src.split('?merchant=')[1])) {
+            var target;
+            if (business.indexOf('&') != -1)
+                business = business.split('&')[0];
+            if (node.src.indexOf('&target=') != -1)
+                target = node.src.split('&target=')[1];
             app.create(
                 business,
                 data,
@@ -55,7 +60,8 @@ app.process = function (el) {
                     label: data.pluck('button'),
                     size: data.pluck('size'),
                     style: data.pluck('style'),
-                    host: data.pluck('host')
+                    host: data.pluck('host'),
+                    target: target
                 },
                 node.parentNode
             );
